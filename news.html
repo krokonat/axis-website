@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dev News</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">axis</span>
+            <nav>
+                <ul>
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/about.html">About us</a></li>
+  <li><a href="https://natalya.website.yandexcloud.net/#about">Portfolio</a></li>
+  <li class="active"><a href="/news.html">News</a></li>
+  <li class="btn"><a href="/contact.html">Contact us</a></li>
+</ul>
+            </nav>
+        </header>
+<div class="news">
+    <h1>📰 Studio News</h1>
+    <p class="subtitle">Certified 98% true. The rest is still under QA.</p>
+</div>
+  <section class="news-grid">
+    <article class="news-card card-1">
+        <div class="maze-bg"></div>
+      <h2>Level Designer Found in Maze</h2>
+      <p>After 3 days of testing a new dungeon, Alex finally escaped. “It was too realistic,” he said, sobbing.</p>
+      <span class="date">03 Jun 2025</span>
+    </article>
+
+    <article class="news-card" data-cursor="chair">
+      <h2>Chair Physics Go Rogue</h2>
+      <p>We added realism. Now chairs phase through walls and fly. Feature, not bug?</p>
+      <span class="date">29 May 2025</span>
+    </article>
+
+    <article class="news-card" data-cursor="dog">
+      <h2>Dog in Office Named CEO</h2>
+      <p>She barked once for “yes”, twice for “crunchies”. HR says we must obey.</p>
+      <span class="date">25 May 2025</span>
+    </article>
+
+    <article class="news-card sparkly-card">
+      <h2>Particles Everywhere</h2>
+      <p>Somehow a single typo made every button explode with glitter. We kinda love it.</p>
+      <span class="date">22 May 2025</span>
+    </article>
+  </section>
+<footer>
+    <div class="blocks container">
+        <div>
+            <span class="logo">axis</span>
+            <p>Crafting immersive game worlds — one pixel at a time.</p>
+        </div>
+         <div>
+            <h4>About us</h4>
+            <ul>
+                <li>Portfolio</li>
+                <li>Careers</li>
+                <li>Contact us</li>
+            </ul>
+         </div>
+         <div>
+            <h4>Get in Touch</h4>
+            <p>Axis Studio
+28 Unity Lane,
+Dublin, Ireland</p>
+<p>+353 1 234 5678</p>
+         </div>
+    </div>
+    <hr>
+    <p>Copyright @2025 Axis. All rights recerved</p>
+</footer>
+<script>
+  const sparkleArea = document.querySelector('.sparkly-card');
+  if (sparkleArea) {
+    const sparkleContainer = document.createElement('div');
+    sparkleContainer.className = 'sparkles';
+    sparkleArea.appendChild(sparkleContainer);
+
+    sparkleArea.addEventListener('mousemove', (e) => {
+      const rect = sparkleArea.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      sparkle.style.left = `${x}px`;
+      sparkle.style.top = `${y}px`;
+
+      sparkleContainer.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 600);
+    });
+  }
+</script>
+</body>
+</html>    

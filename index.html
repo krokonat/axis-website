@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis - Home</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">axis</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/about.html">About us</a></li>
+                    <li><a href="https://natalya.website.yandexcloud.net/#about">Portfolio</a></li>
+                    <li><a href="/news.html">News</a></li>
+                    <li class="btn"><a href="/contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>3D Game Dev Studio</h2>
+                <h1>Play the Future</h1>
+                <p>A playground of code, design, and imagination — we build interactive game worlds,
+where every polygon tells a story and every frame invites you to explore.</p>
+                <button class="btn">Get more details</button>
+            </div>
+            <spline-viewer class="sharik" url="https://prod.spline.design/NEk53BuA5eBJjqnX/scene.splinecode"></spline-viewer>
+        </div>
+
+        <div class="container trending">
+            <a href="#" class="see-all">SEE ALL</a>
+            <h3>Currently Trending Games</h3>
+            
+
+            <div class="games">
+                <div class="block">
+                    <img class="icon" src="/img/game1.svg" alt="">
+                    <span><img src="img/fire.svg" alt=""> 40 Followers</span>
+                </div>
+                <div class="block">
+                    <img class="icon" src="/img/game2.svg" alt="">
+                    <span><img src="img/fire.svg" alt=""> 38 Followers</span>
+                </div>
+                <div class="block">
+                    <img class="icon" src="/img/game3.svg" alt="">
+                    <span><img src="img/fire.svg" alt=""> 35 Followers</span>
+                </div>
+                <div class="block">
+                    <img class="icon" src="/img/game4.svg" alt="">
+                    <span><img src="img/fire.svg" alt=""> 29 Followers</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container big-text">
+            <p>We build worlds, not just games</p>
+        </div>
+
+        <div class="container banner">
+        <video src="img/zoom.mp4" muted autoplay loop></video>
+    </div>
+</div>
+
+<div class="features">
+    <div class="container">
+        <h3>Made for Players</h3>
+        <div class="info">
+            <div class="blockes">
+                <img src="img/controller.svg" alt="">
+                <h4>Gameplay Systems</h4>
+                <p>Core loops, progression, combat, mechanics — we design systems that feel great to play.</p>
+            </div>
+
+            <div class="blockes">
+                <img src="img/planet.svg" alt="">
+                <h4>Immersive Worlds</h4>
+                <p>Environments crafted with storytelling, exploration, and mood in mind.</p>
+            </div>
+
+            <div class="blockes">
+                <img src="img/brain.svg" alt="">
+                <h4>AI & Game Logic</h4>
+                <p>Smart behavior, adaptive difficulty, and reactive game states.</p>
+            </div>
+
+            <div class="blockes">
+                <img src="img/3d.svg" alt="">
+                <h4>Modular 3D Assets</h4>
+                <p>Custom characters, props, VFX, shaders — ready for real-time engines.</p>
+            </div>
+
+            <div class="blockes">
+                <img src="img/kluch.svg" alt="">
+                <h4>Prototypes & Demos</h4>
+                <p>From vertical slices to full-featured interactive builds for pitching or early testing.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="container projects">
+    <a href="" class="see-all">SEE ALL</a>
+    <h3>Our Resent Projects</h3>
+    <div class="images">
+        <img src="img/new3.jpg" alt="">
+        <img src="img/new1.jpg" alt="">
+        <img src="img/new6.jpg" alt="">
+        <img src="img/new4.jpg" alt="">
+        <img src="img/new5.jpg" alt="">
+        <img src="img/new2.jpg" alt="">
+    </div>
+
+</div>
+
+<div class="email-wrapper">
+  <div class="email container">
+    <div class="email-text">
+      <h3>Stay in the Game</h3>
+      <p>Get updates on our latest game projects, dev insights, behind-the-scenes content, and exclusive early demos — straight to your inbox.</p>
+    </div>
+
+    <div class="email-input-wrapper">
+        <input type="email" id="emailField" placeholder="Enter email address">
+        <button onclick="checkEmail()">SUBSCRIBE</button>
+        <label class="email-checkbox">
+            <input type="checkbox">
+            <span>I want early access to beta builds</span>
+        </label>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<footer>
+    <div class="blocks container">
+        <div>
+            <span class="logo">axis</span>
+            <p>Crafting immersive game worlds — one pixel at a time.</p>
+        </div>
+         <div>
+            <h4>About us</h4>
+            <ul>
+                <li>Portfolio</li>
+                <li>Careers</li>
+                <li>Contact us</li>
+            </ul>
+         </div>
+         <div>
+            <h4>Get in Touch</h4>
+            <p>Axis Studio
+28 Unity Lane,
+Dublin, Ireland</p>
+<p>+353 1 234 5678</p>
+         </div>
+    </div>
+    <hr>
+    <p>Copyright @2025 Axis. All rights recerved</p>
+</footer>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.2/build/spline-viewer.js"></script>
+    <script>
+        setInterval(() => {
+            const sharik = document.getElementsByClassName("sharik")[0].shadowRoot
+            if(sharik && sharik.getElementById("logo")) {
+                sharik.getElementById("logo").style.display = "none";
+            }
+        }, 300);
+    </script>
+
+<script>
+  function checkEmail() {
+    let email = document.querySelector('#emailField').value.trim();
+
+    if (email === '') {
+      alert('Please enter your email address.');
+    } else if (!email.includes('@')) {
+      alert('Oops! Looks like your email is missing the “@” symbol.');
+    } else if (!email.includes('.')) {
+      alert('Oops! Looks like your email is missing the “.” symbol.');
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('Please enter a valid email address.');
+    } else {
+      alert('Thanks for subscribing! You\'re on the list.');
+      document.querySelector('#emailField').value = '';
+    }
+  }
+</script>
+</body>
+</html>

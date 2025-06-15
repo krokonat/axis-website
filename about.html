@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis - About Us</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">axis</span>
+            <nav>
+                <ul>
+  <li><a href="/index.html">Home</a></li>
+  <li class="active"><a href="/about.html">About us</a></li>
+  <li><a href="https://natalya.website.yandexcloud.net/#about">Portfolio</a></li>
+  <li><a href="/news.html">News</a></li>
+  <li class="btn"><a href="/contact.html">Contact us</a></li>
+</ul>
+            </nav>
+        </header>
+    <div class="hero-about-wrapper">
+      <div class="hero-about">
+        <div class="info">
+          <h1>Built to Play, Designed to Inspire</h1>
+          <p>At PlayForge, we craft interactive game experiences that blend storytelling, tech, and design into unforgettable adventures.</p>
+          <button class="btn">Meet the Team</button>
+        </div>
+        <img id='aboutImage' src="img/about.png" alt="">
+      </div>
+    </div>
+<div class="container work">
+  <h2>Meet the Team</h2>
+  <div class="blocks">
+    <div class="block">
+      <div class="block-inner">
+        <div class="block-front">
+          <span class="badge">Creative Director</span>
+          <img src="img/w1.png" alt="">
+          <h3>Elena Rivas</h3>
+        </div>
+        <div class="block-back">
+          <p>Visionary behind our visual worlds. Leads concept design and storytelling.
+With over 10 years in game art direction, Elena shapes the tone and visual identity of every project. She collaborates closely with writers and designers to ensure a cohesive, immersive experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-inner">
+        <div class="block-front">
+          <span class="badge">Lead Developer</span>
+          <img src="img/m1.png" alt="">
+          <h3>Tomás O’Reilly</h3>
+        </div>
+        <div class="block-back">
+          <p>Visionary behind our visual worlds. Leads concept design and storytelling.
+With over 10 years in game art direction, Elena shapes the tone and visual identity of every project. She collaborates closely with writers and designers to ensure a cohesive, immersive experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-inner">
+        <div class="block-front">
+          <span class="badge">3D Artist</span>
+          <img src="img/m2.png" alt="">
+          <h3>Samir Patel</h3>
+        </div>
+        <div class="block-back">
+          <p>Specialist in modeling, rigging, and breathing life into characters.
+Samir brings characters and environments to life with precision and flair. He handles everything from sculpting to animation, and always pushes for visual storytelling through design.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-inner">
+        <div class="block-front">
+          <span class="badge">UX Designer</span>
+          <img src="img/m3.png" alt="">
+          <h3>Lukas Steiniger</h3>
+        </div>
+        <div class="block-back">
+          <p>Designs smooth, intuitive player journeys with a love for detail.
+Lia focuses on making gameplay feel effortless and enjoyable. She conducts player testing, refines interfaces, and ensures that every touchpoint supports the game’s vision.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+    </div> 
+<footer>
+    <div class="blocks container">
+        <div>
+            <span class="logo">axis</span>
+            <p>Crafting immersive game worlds — one pixel at a time.</p>
+        </div>
+         <div>
+            <h4>About us</h4>
+            <ul>
+                <li>Portfolio</li>
+                <li>Careers</li>
+                <li>Contact us</li>
+            </ul>
+         </div>
+         <div>
+            <h4>Get in Touch</h4>
+            <p>Axis Studio
+28 Unity Lane,
+Dublin, Ireland</p>
+<p>+353 1 234 5678</p>
+         </div>
+    </div>
+    <hr>
+    <p>Copyright @2025 Axis. All rights recerved</p>
+</footer>
+<script>
+  const image = document.getElementById('aboutImage');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const shift = Math.min(scrollY * 0.6, 1000); // Ограничим сдвиг
+    image.style.transform = `translateX(${shift}px)`;
+  });
+
+  const header = document.querySelector("header");
+  const heroAbout = document.querySelector('.hero-about');
+
+
+  function syncOffset() {
+    const left = header.offsetLeft;
+    heroAbout.style.left = `${left}px`;
+    heroAbout.style.width = `calc(100% - ${left}px)`;
+  }
+
+  syncOffset();
+
+  window.addEventListener('resize', syncOffset);
+</script>
+  
+</body>
+</html>
+

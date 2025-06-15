@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 500ms ease;
+}
+
+body {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #16266e 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo, footer .blocks .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a{
+    padding-bottom: 12px;
+    color: #fff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #89aad9;
+
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #89aad9;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+
+header nav ul li.btn a, .email button {
+    background-color: #16266e;
+    padding: 9px 17px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+header nav ul li.btn a:hover, .email button:hover {
+    border: 1px solid #fff
+}
+
+.hero {
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 1;
+    margin-top: 120px;
+}
+
+.hero--info {
+    width: 500px;
+    padding-top: 70px;
+}
+
+.hero--info h2 {
+    color: #89aad9;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 10px 0;
+}
+
+.hero--info .btn, .hero-about .info .btn {
+    background: #16266e;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    border: 1px solid transparent;
+    font-size: larger;
+    margin-top: 20px;
+}
+
+.hero--info .btn:hover, .hero-about .info .btn:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.sharik {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    max-width: 100%;
+    scale: 2;
+}
+
+.trending {
+    padding-top: 200px;
+}
+.trending h3 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.trending .see-all, .projects .see-all {
+    color: #fff;
+    background: #16266e;
+    border-radius: 5px;
+    padding: 12px 22px;
+    float: right;
+    display: block;
+}
+
+.trending .see-all:hover, .projects .see-all:hover{
+    background-color: #2f3a6b;
+}
+
+.trending .games {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    padding: 50px 0;
+    overflow-x: auto;
+}
+
+.trending .games .icon {
+    width: 260px;
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 20 px;
+}
+
+.trending .games span img {
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+    margin-top: 200px;
+}
+
+.banner {
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+.banner video {
+    display: block;
+    width: 100%;
+}
+
+/*image*/
+
+.features {
+   background: url('/img/bg3.png') no-repeat center center fixed;
+   background-size: cover; 
+}
+
+.features h3 {
+    padding-top: 160px;
+    text-align: center; 
+    font-size: 30px;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+    max-width: 100%;
+}
+
+.features .info .blockes {
+    text-align: center;
+    width: 25%;
+    margin-top: 140px;
+    margin-left:20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.features .info .blockes p {
+    font-size: 16px;
+}
+
+.features .info .blockes img {
+    margin-bottom: 40px;
+    scale: 3;
+}
+
+.projects {
+    padding: 200px 64px;
+}
+
+.projects h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects .images {
+    display: flex;
+    align-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+.projects .images img {
+    height: unset;
+    width: 100%;
+    border-radius: 20px;
+    align-content: center;
+    filter: brightness(0.7);
+}
+
+@media (min-width: 900px) {
+    .projects .images img {
+        height: 240px;
+        width: unset;
+    }
+}
+
+
+.projects .images img:hover {
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+
+/* last part */
+
+.email-wrapper {
+    width: 100%;
+    background: #2f3a6b;
+}
+
+.email {
+    padding-bottom: 100px;
+    margin-top: 30px;
+    padding: 40px 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+@media (min-width: 1280px) {
+    .email {
+        gap: 96px;
+    }
+}
+
+.email h3 {
+    font-size: 50px;
+}
+
+.email p {
+    width: 410px;
+    padding-top: 20px;
+}
+
+.email input {
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1;
+    align-content: right;
+    padding-right: -500px;
+
+}
+
+.email input::placeholder {
+    color: #2f3a6b;
+}
+
+.email button {
+    right: 116px;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 14px;
+    position: relative;
+    z-index: 2;
+}
+
+.email-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+   margin-top: 20px;
+}
+
+.email-checkbox input {
+  accent-color: #89aad9;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* about us*/
+.hero-about-wrapper {
+    width: 100%;
+    position: relative;
+    height: 730px;
+}
+
+.hero-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200px 140px;
+  padding-left: 64px;
+  gap: 64px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.hero-about .info {
+  max-width: 500px;
+}
+
+.hero-about .info h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-about .info p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.hero-about .btn {
+  margin-top: 40px;
+}
+
+.hero-about img {
+    width: 50%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+  right: -20%;
+  top: 200px;
+  scale: 1.5;
+  transition: transform 0.6s ease-out;
+}
+
+.work {
+  padding: 80px 64px;
+  overflow-x: hidden;
+}
+
+.work h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.work h3 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.work p {
+width: 200px;
+}
+
+.work .blocks {
+  display: flex;
+  overflow-x: auto;
+  gap: 56px;
+  padding-bottom: 10px;
+}
+
+.block {
+  perspective: 1000px;
+  width: 300px;
+  height: 400px;
+  flex: 0 0 300px;
+}
+
+.block-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+
+.block:hover .block-inner {
+  transform: rotateY(180deg);
+}
+
+.block-front,
+.block-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  background: #2f3a6b;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.block-front {
+  z-index: 2;
+}
+
+.block-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.block-back p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #89aad9;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+  z-index: 3;
+}
+
+.blocks .block img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.block h3 {
+  text-align: center;
+  padding: 10px 0 0;
+  font-size: 25px;
+}
+
+/* footer */
+footer {
+    background: #000;
+    padding: 50px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p {
+    width: 280px;
+    margin: 15px 0;
+}
+
+footer .blocks h4 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    opacity: 0.7;
+}
+
+footer hr {
+    margin: 30px 0;
+    height: 0.6px;
+    color: #464646;
+}
+
+footer > p {
+    text-align: center;
+}
+
+:root {
+  --bg: #041326;
+  --text: #f0f0f0;
+  --muted: #999;
+  --accent: #89aad9;
+  --card-bg: #1a1a1a;
+  --border: #2a2a2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.news {
+  padding: 60px 20px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.news h1 {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  padding: 48px 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.news-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+.news-card h2 {
+  font-size: 20px;
+  color: var(--accent);
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+.news-card p {
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.news-card .date {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Настройка курсора */
+.sparkly-card {
+  cursor: url('https://cdn-icons-png.flaticon.com/512/3524/3524768.png') 16 16, auto; /* пример курсора */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Контейнер частиц */
+.sparkles {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0));
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: sparkle-fade 0.6s ease-out forwards;
+}
+
+@keyframes sparkle-fade {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.3) translateY(20px);
+    opacity: 0;
+  }
+}
+
+.contact-map {
+  background: #0f0f0f;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.map-container {
+  position: relative;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0.8);
+}
+
+.marker {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #ff4d4f;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 2px rgba(255, 77, 79, 0.6);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.marker:hover {
+  transform: translate(-50%, -50%) scale(1.4);
+  box-shadow: 0 0 12px 4px rgba(255, 77, 79, 0.8);
+}
+
+/* Highlight Dublin */
+.marker[title="Dublin"] {
+  background: #ffd700;
+  box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.8);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.6); }
+}
+
+.hero-contacts h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-contacts p {
+text-align: center;
+}
+
+.feedback {
+    padding: 100px 0;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback form .one-line {
+    width: 95%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 800px;
+}
+
+.feedback form button {
+    background-color: #000;
+    padding: 12px 28px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 38px;
+}
+
+.feedback form button:hover {
+    border: 1px solid #fff
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline>div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #89aad9;
+    font-size: 14px;
+}
+
+.feedback form input, .feedback form textarea {
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 20px 30px;
+    display: block;
+    width: 90%;
+    color: #041326;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.email-input-wrapper {
+    position: relative;
+    flex: 1;
+    margin-top: 12px;
+    min-width: 300px;
+}
+
+.email-input-wrapper button {
+    position: absolute;
+    right: 6.5px;
+    top: 6.5px;
+}
